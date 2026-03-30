@@ -149,10 +149,10 @@ const workExperiences = {
       company: "GENAPCT",
       companylogo: require("./assets/images/download.png"),
       date: "Jan 2024 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      desc: "",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "",
+        ""
       ]
     },
     {
@@ -160,7 +160,7 @@ const workExperiences = {
       company: "AIRBUS",
       companylogo: require("./assets/images/airbus.png"),
       date: "Jun 2023 – Aug 2023",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: ""
     }
   ]
 };
