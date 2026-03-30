@@ -71,36 +71,36 @@ const skillsSection = {
 https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
-    {
-      skillName: "SQL",
-      fontAwesomeClassname: "fab fa-SQL"
-    },
-    {
-      skillName: "SNOWFLAKE",
-      fontAwesomeClassname: "fab fa-SNOWFLAKE-alt"
-    },
-    {
-      skillName: "PYTHON",
-      fontAwesomeClassname: "fab fa-PYTHON"
-    },
-    {
-      skillName: "DATABRICKS",
-      fontAwesomeClassname: "fab fa-DATABRICKS"
-    },
-    {
-      skillName: "PYSPARK",
-      fontAwesomeClassname: "fab fa-PYSPARK"
-    },
-    {
-      skillName: "ETL",
-      fontAwesomeClassname: "fab fa-ETL"
-    },
-    {
-      skillName: "DATA MODELLING",
-      fontAwesomeClassname: "fab fa-DATA MODELLING"
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
+  {
+    skillName: "SQL",
+    fontAwesomeClassname: "fas fa-database"
+  },
+  {
+    skillName: "Snowflake",
+    fontAwesomeClassname: "fas fa-snowflake"
+  },
+  {
+    skillName: "Python",
+    fontAwesomeClassname: "fab fa-python"
+  },
+  {
+    skillName: "Databricks",
+    fontAwesomeClassname: "fas fa-server"
+  },
+  {
+    skillName: "PySpark",
+    fontAwesomeClassname: "fas fa-fire"
+  },
+  {
+    skillName: "ETL Pipelines",
+    fontAwesomeClassname: "fas fa-exchange-alt"
+  },
+  {
+    skillName: "Data Modeling",
+    fontAwesomeClassname: "fas fa-project-diagram"
+  }
+],
+display: true // Set false to hide this section, defaults to true
 };
 
 // Education Section
@@ -110,7 +110,7 @@ const educationInfo = {
   schools: [
     {
       schoolName: "RV COLLEGE OF ENGG",
-      logo: require(""),
+      logo: require("./assets/images/college.jpg"),
       subHeader: "Computer Science and Engg",
       duration: "December 2020 - August 2024"
     },
@@ -124,16 +124,16 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      Stack: "ETL Design", //Insert stack or technology you have experience in
+      progressPercentage: "80%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Backend",
-      progressPercentage: "70%"
+      Stack: "DATA ARCHITECT",
+      progressPercentage: "80%"
     },
     {
-      Stack: "Programming",
-      progressPercentage: "60%"
+      Stack: "DATA SOLUTIONING",
+      progressPercentage: "80%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -145,10 +145,10 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
+      role: "Data Engineer",
+      company: "GENAPCT",
+      companylogo: require("./assets/images/download.png"),
+      date: "Jan 2024 – Present",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       descBullets: [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
@@ -156,17 +156,10 @@ const workExperiences = {
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
+      role: "Python Developer",
+      company: "AIRBUS",
+      companylogo: require("./assets/images/airbus.png"),
+      date: "Jun 2023 – Aug 2023",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
   ]
@@ -184,28 +177,28 @@ const openSource = {
 
 const bigProjects = {
   title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  subtitle: "COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: null,
+      projectName: "END TO END DIGITAL COCKPIT",
+      projectDesc: "Designed and developed a data-driven digital cockpit for supply chain management, enabling real-time visibility, performance tracking, and data-driven decision-making using advanced data engineering practices.",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://saayahealth.com/"
+          url: "#"
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: null,
+      projectName: "Data Pipeline Optimization",
+      projectDesc: "Optimized large-scale SQL pipelines and improved query performance, reducing execution time and enhancing data processing efficiency for analytics workloads.",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://nextu.se/"
+          url: "#"
         }
       ]
     }
@@ -217,61 +210,39 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: emoji("Achievements And Certifications 🏆"),
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "Professional certifications and milestones in Data Engineering.",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "SnowPro Core Certification",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+        "Certified Snowflake professional with expertise in data warehousing, query optimization, data sharing, and scalable data pipelines.",
+      image: require("./assets/images/snowflake.png"),
+      imageAlt: "Snowflake Certification Logo",
       footerLink: [
         {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+          name: "View Certification",
+          url: "https://achieve.snowflake.com/a187f87f-8ba5-4dd0-883e-3a3d548dffc9#acc.BhFG3zs8"
         }
       ]
     },
     {
-      title: "Google Assistant Action",
+      title: "Databricks Data Engineer Associate",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+        "Certified in building data pipelines using Apache Spark, Delta Lake, and scalable data engineering workflows in Databricks.",
+      image: require("./assets/images/databricks.png"),
+      imageAlt: "Databricks Certification Logo",
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
-    },
-
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          name: "View Certification",
+          url: "https://credentials.databricks.com/cfe078c4-5581-4a06-80fb-d525b6189134#acc.m6EeaIpG"
         }
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section
 };
 
 // Blogs Section
@@ -283,16 +254,16 @@ const blogSection = {
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
+      url: "",
+      title: "",
       description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+        ""
     },
     {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
+      url: "",
+      title: "",
       description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
+        ""
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -307,12 +278,7 @@ const talkSection = {
   ),
 
   talks: [
-    {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
-    }
+    
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -325,7 +291,7 @@ const podcastSection = {
 
   // Please Provide with Your Podcast embeded Link
   podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
+    
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -343,8 +309,8 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  number: "+91-8050044134",
+  email_address: "pkeerthiyadav2003@gmail.com"
 };
 
 // Twitter Section
