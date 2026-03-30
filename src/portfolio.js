@@ -149,11 +149,7 @@ const workExperiences = {
       company: "GENAPCT",
       companylogo: require("./assets/images/download.png"),
       date: "Jan 2024 – Present",
-      desc: "",
-      descBullets: [
-        "",
-        ""
-      ]
+      desc: ""
     },
     {
       role: "Python Developer",
